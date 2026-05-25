@@ -19,4 +19,6 @@ jobs:
           pip install -r requirements.txt
       - name: Run scoring tests
         working-directory: backend_demo
-        run: pytest -q
+        env:
+          PYTHONPATH: .
+        run: python -m pytest tests/test_scoring.py -q
