@@ -1,0 +1,3 @@
+Backend engineer role.
+
+We are looking for a developer with Python, FastAPI, SQL, API design, and production ownership experience. React and Docker are nice to have.

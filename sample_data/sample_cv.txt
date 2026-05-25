@@ -1,0 +1,10 @@
+Sercan Ozkan
+Backend Engineer
+
+Experience:
+- Built FastAPI services for CV analysis workflows.
+- Worked with Python, SQL, React, and API integrations.
+- Designed recruiter-focused dashboards and local processing tools.
+
+Skills:
+Python, FastAPI, SQL, React, Docker

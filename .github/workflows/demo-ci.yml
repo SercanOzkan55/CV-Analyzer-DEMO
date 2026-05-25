@@ -1,0 +1,22 @@
+name: Demo CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  backend-demo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install demo dependencies
+        working-directory: backend_demo
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      - name: Run scoring tests
+        working-directory: backend_demo
+        run: pytest -q
